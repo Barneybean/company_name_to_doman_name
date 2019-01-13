@@ -1,9 +1,10 @@
 # company_name_to_doman_name
 
 # input 
-
+![Screenshot](input.png)
 
 # Output
+![Screenshot](output.png)
 
 Usage: 
 1. use the sample company_name.csv or create your own list of company names in csv file that looks like provided csv
