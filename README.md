@@ -1,13 +1,7 @@
 # company_name_to_doman_name
 
-# input 
-![Screenshot](input.png)
-
-# Output
-![Screenshot](output.png)
-
-Core Code: 
-
+##Core Code: 
+```
 def get_domain_name(name):
     #preocess search string
     name = re.sub("inc|INC|Inc|/.co|/.Co|LLP|llp|LLC|llc", "", name.lower())
@@ -23,6 +17,13 @@ def get_domain_name(name):
     #error handling for incorrect company names 
     except:
         return "check name"
+```
+
+# input 
+![Screenshot](input.png)
+
+# Output
+![Screenshot](output.png)
 
 Usage: 
 1. use the sample company_name.csv or create your own list of company names in csv file that looks like provided csv
