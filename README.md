@@ -6,6 +6,24 @@
 # Output
 ![Screenshot](output.png)
 
+Core Code: 
+
+def get_domain_name(name):
+    #preocess search string
+    name = re.sub("inc|INC|Inc|/.co|/.Co|LLP|llp|LLC|llc", "", name.lower())
+    name = re.sub("&", "and", name.lower())
+    name = re.sub("#|'|-|^|$|@|!|~|\.|\*", "", name.lower())
+    #call API and retrive result
+    try:
+        result = clearbit.Company.find(domain =name+'.com', stream=True)
+        if company != None:
+            return result['domain']
+        else: 
+            return "-"
+    #error handling for incorrect company names 
+    except:
+        return "check name"
+
 Usage: 
 1. use the sample company_name.csv or create your own list of company names in csv file that looks like provided csv
 
