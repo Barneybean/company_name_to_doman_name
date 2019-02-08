@@ -1,6 +1,6 @@
 # company_name_to_doman_name
 
-##Core Code: 
+## Core Code: 
 ```
 def get_domain_name(name):
     #preocess search string
